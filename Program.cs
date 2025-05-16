@@ -1,5 +1,5 @@
-﻿
-class SetExtensions
+
+class asd
 {
     public static List<T> Diff<T>(List<T> a, List<T> b, List<T> c, bool symmetric = false)
     {
@@ -25,11 +25,11 @@ class Program
         List<int> setC = new List<int> { 5, 7, 8, 9 };
 
         // Вычисление и вывод простой разности
-        List<int> simpleDifference = SetExtensions.Diff(setA, setB, setC);
+        List<int> simpleDifference = asd.Diff(setA, setB, setC);
         Console.WriteLine("Простая разность: " + string.Join(", ", simpleDifference));
 
         // Вычисление и вывод симметрической разности
-        List<int> symmetricDifference = SetExtensions.Diff(setA, setB, setC, true);
+        List<int> symmetricDifference = asd.Diff(setA, setB, setC, true);
         Console.WriteLine("Симметричная разность: " + string.Join(", ", symmetricDifference));
     }
 }
